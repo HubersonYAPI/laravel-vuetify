@@ -14,6 +14,10 @@ Vue.use(Vuetify)
 
 import Dashboard from './views/Dashboard'
 import Products from './views/Products'
+import Users from './views/Users'
+import Profil from './views/Profil'
+import Laptop from './views/Laptop'
+import Uc from './views/Uc'
 
 const router = new VueRouter({
     mode: 'history',
@@ -27,6 +31,26 @@ const router = new VueRouter({
             path: '/products',
             name: 'products',
             component: Products,
+        },
+        {
+            path: '/users',
+            name: 'users',
+            component: Users,
+        },
+        {
+            path: '/profil',
+            name: 'profil',
+            component: Profil,
+        },
+        {
+            path: '/laptop',
+            name: 'laptop',
+            component: Laptop,
+        },
+        {
+            path: '/uc',
+            name: 'uc',
+            component: Uc,
         }
     ],
 });
